@@ -1,8 +1,12 @@
 module.exports = {
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:flowtype/recommended'
+  ],
   parser: 'babel-eslint',
-  extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:flowtype/recommended'],
-  ecmaFeatures: {
-    modules: true
+  parserOptions: {
+    sourceType: 'module'
   },
   env: {
     es6: true,
